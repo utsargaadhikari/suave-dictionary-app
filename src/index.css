@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.tab-button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #EAEAEA;
+  color: #000;
+  transition: background-color 0.3s;
+  
+
+}
+
+.tab-button.active {
+  background-color: black;
+  color: #FFF;
+}
+
+
+
+
+/* =========== MEDIA QUERIES(MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+
+  }
+
+  .tab-container {
+    width: 100%;
+
+    top: calc(100px + 20px);
+    /* Position below search bar */
+    transform: translateX(-50%);
+    /* Center horizontally */
+    left: 50%;
+  }
+
+  .tab-content {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    /* Center align the buttons */
+    margin-bottom: 10px;
+  }
+
+  .tab-button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .share-image {
+    width: 100%;
+    height: auto;
+    top: 1650px;
+
+  }
+}
+
+/* =========== MEDIA QUERIES(SMALL DEVICES) ========== */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 5px;
+
+  }
+
+  .tab-container {
+    width: 100%;
+
+    top: calc(100px + 20px);
+    /* Position below search bar */
+    transform: translateX(-50%);
+    /* Center horizontally */
+    left: 50%;
+  }
+
+  .tab-content {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    /* Center align the buttons */
+    margin-bottom: 10px;
+  }
+
+  .tab-button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .share-image {
+    width: 100%;
+    height: auto;
+    top: 1600px;
+
+  }
+}
